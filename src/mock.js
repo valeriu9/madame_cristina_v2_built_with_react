@@ -1,0 +1,79 @@
+export const salonData = {
+  name: "Madame Cristina",
+  tagline: "Where beautiful hair begins",
+  description: "With over seven years of professional experience, I aim to bring out your confidence and beauty. I specialize in tailored hair cuts, advanced coloring techniques, and high-end treatments. Every service I provide is customized to meet your specific needs.",
+  bookingUrl: "https://madame-cristina.planway.com/",
+  contact: {
+    phone: "+45 91 99 72 52",
+    email: "cu@madamecristina.dk",
+    address: "Kattesund 19, 8700 Horsens, Denmark",
+    hours: [
+      { day: "Monday", time: "14:00 - 20:00" },
+      { day: "Tuesday - Friday", time: "09:00 - 20:00" },
+      { day: "Saturday", time: "09:00 - 15:00" },
+      { day: "Sunday", time: "Closed" }
+    ]
+  },
+  services: [
+    {
+      id: "haircuts",
+      title: "Haircuts",
+      subtitle: "Tailored to perfection",
+      description: "Every haircut is customized to suit your face shape, hair texture, and personal style. Whether you're looking for a classic cut or something bold and contemporary, I'll create a look that brings out your best features.",
+      features: [
+        "Consultation and style advice",
+        "Precision cutting techniques",
+        "Styling and finishing",
+        "Personalized hair care recommendations"
+      ]
+    },
+    {
+      id: "coloring",
+      title: "Hair Coloring",
+      subtitle: "Advanced techniques",
+      description: "Specializing in cutting-edge coloring methods that deliver stunning, natural-looking results. From subtle dimension to dramatic transformations, I use premium products to achieve the perfect shade.",
+      features: [
+        "Airtouch",
+        "Total Blond",
+        "Babylights",
+        "Brazilian Blonde",
+        "Balayage",
+        "All Over Color",
+        "Color Correction"
+      ]
+    },
+    {
+      id: "treatments",
+      title: "Hair Treatments",
+      subtitle: "Premium care",
+      description: "Restore and rejuvenate your hair with high-end treatments from world-renowned brands. Each treatment is selected specifically for your hair's needs to deliver maximum results.",
+      features: [
+        "Nashi Argan treatment",
+        "Davines treatment",
+        "Schwarzkopf professional system",
+        "Deep conditioning",
+        "Scalp detox treatment"
+      ]
+    }
+  ],
+  gallery: [
+    "https://scontent-cph2-1.cdninstagram.com/v/t51.82787-15/583668310_18158513710398247_1641625637841046498_n.jpg?stp=dst-jpegr_e35_p1080x1080_tt6&_nc_cat=109&ig_cache_key=Mzc2NTk1MjY0MDg3MDc4NTMwOA%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad",
+    "https://scontent-cph2-1.cdninstagram.com/v/t51.82787-15/568409402_18156290092398247_2072463044875565522_n.jpg?stp=dst-jpegr_e35_p1080x1080_tt6&_nc_cat=101&ig_cache_key=Mzc0ODkyOTc0NjkxMTM2NjY5Ng%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad",
+    "https://scontent-cph2-1.cdninstagram.com/v/t51.82787-15/565281934_18155210773398247_9087515543980638697_n.jpg?stp=dst-jpegr_e35_tt6&_nc_cat=111&ig_cache_key=Mzc0NDc4MDEyMzYyMzk3MjMzMA%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad",
+    "https://scontent-cph2-1.cdninstagram.com/v/t39.30808-6/359802832_18067555195398247_1709477769886255529_n.jpg?stp=dst-jpg_e35_p1080x1080_tt6&_nc_cat=107&ig_cache_key=MzE0Njk0NjczNDg4MTc4MjE0Ng%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad",
+    "https://scontent-cph2-1.cdninstagram.com/v/t39.30808-6/366303124_18070926868398247_6256975652190548865_n.jpg?stp=dst-jpg_e35_p1080x1080_tt6&_nc_cat=103&ig_cache_key=MzE2NjE5NDM5NjMwNzAzNDkwNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad",
+    "https://scontent-cph2-1.cdninstagram.com/v/t39.30808-6/423236423_18091762894398247_7321018742133971505_n.jpg?stp=dst-jpg_e35_p1080x1080_tt6&_nc_cat=100&ig_cache_key=MzI5MTAwMTU3MDI4NzE1NjcwMQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad",
+    "https://scontent-cph2-1.cdninstagram.com/v/t51.29350-15/332832854_6338262479518448_3969487203075519278_n.jpg?stp=dst-jpg_e35_p1080x1080_tt6&_nc_cat=108&ig_cache_key=MzA0NjA4MzQyNzM5NzI1NzUyMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=56bdfd",
+    "https://scontent-cph2-1.cdninstagram.com/v/t51.29350-15/333301787_1220281518694457_5950731704656943868_n.jpg?stp=dst-jpg_e35_p1080x1080_tt6&_nc_cat=105&ig_cache_key=MzA1Njk2Mzk3MjI5MzIzNzE2OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=56bdfd",
+    "https://scontent-cph2-1.cdninstagram.com/v/t51.29350-15/339523231_613613736942721_8613807152293121633_n.jpg?stp=dst-jpg_e35_p1080x1080_tt6&_nc_cat=101&ig_cache_key=MzA3NTAzMDE4ODQ1OTA2OTU0Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=56bdfd",
+    "https://scontent-cph2-1.cdninstagram.com/v/t51.29350-15/313473443_831685051404878_8738641744450190459_n.jpg?stp=dst-jpg_e35_p1080x1080_tt6&_nc_cat=102&ig_cache_key=Mjk2NDE3MjUxOTIyMjExMTEwNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=56bdfd",
+    "https://scontent-cph2-1.cdninstagram.com/v/t51.29350-15/314481287_1104509653565899_4668725711282771376_n.jpg?stp=dst-jpg_e35_p1080x1080_tt6&_nc_cat=107&ig_cache_key=Mjk2NDE3MzM5MDA0MzU3NTIwNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=56bdfd",
+    "https://scontent-cph2-1.cdninstagram.com/v/t51.29350-15/313843793_804923667399307_6432832330276745753_n.jpg?stp=dst-jpg_e35_p1080x1080_tt6&_nc_cat=107&ig_cache_key=Mjk2NDE3MzYyMjkwMjk4MjU4OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=56bdfd"
+  ],
+  heroImage: "https://scontent-cph2-1.cdninstagram.com/v/t51.82787-15/565281934_18155210773398247_9087515543980638697_n.jpg?stp=dst-jpegr_e35_tt6&_nc_cat=111&ig_cache_key=Mzc0NDc4MDEyMzYyMzk3MjMzMA%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad",
+  serviceImages: {
+    haircuts: "https://customer-assets.emergentagent.com/job_modern-stylist/artifacts/2215jfsh_Copy%20of%20IMG_1598.JPG",
+    coloring: "https://customer-assets.emergentagent.com/job_modern-stylist/artifacts/pws0qkpo_IMG_7020.JPEG",
+    treatments: "https://customer-assets.emergentagent.com/job_modern-stylist/artifacts/i0ffmn1z_IMG_0773.JPEG"
+  }
+};
