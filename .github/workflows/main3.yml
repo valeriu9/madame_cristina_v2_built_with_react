@@ -1,4 +1,4 @@
-# url= (local change; replace if you keep this in repo)
+# Build and deploy to GitHub Pages (delete & recreate gh-pages branch then publish)
 name: Build and deploy to GitHub Pages
 on:
   push:
@@ -51,5 +51,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
           publish_branch: gh-pages
-          # ensure custom domain file is present on the published branch
           cname: 'www.madamecristina.dk'
