@@ -1,4 +1,3 @@
-# Build and deploy to GitHub Pages (delete & recreate gh-pages branch then publish)
 name: Build and deploy to GitHub Pages
 on:
   push:
@@ -30,19 +29,14 @@ jobs:
       - name: Build (craco)
         run: npm run build
 
-      - name: Remove remote gh-pages branch (if it exists)
-        if: always()
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Add SPA fallback (copy index.html -> 404.html)
         run: |
-          # configure auth so we can delete the branch
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}
-          # delete gh-pages branch on origin if it exists (ignore error if not)
-          if git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
-            echo "Remote gh-pages exists — deleting..."
-            git push origin --delete gh-pages
+          if [ -f build/index.html ]; then
+            cp build/index.html build/404.html
+            echo "Created build/404.html from build/index.html"
           else
-            echo "Remote gh-pages branch does not exist; nothing to delete."
+            echo "build/index.html not found" >&2
+            exit 1
           fi
 
       - name: Deploy to GitHub Pages
