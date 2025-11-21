@@ -17,7 +17,6 @@ function App() {
     <HelmetProvider>
       <LanguageProvider>
         <div className="App">
-          <BrowserRouter>
             <ScrollToTop />
             <Navbar />
             <Routes>
@@ -28,7 +27,6 @@ function App() {
               <Route path="/prices" element={<Prices />} />
             </Routes>
             <Footer />
-          </BrowserRouter>
         </div>
       </LanguageProvider>
     </HelmetProvider>
