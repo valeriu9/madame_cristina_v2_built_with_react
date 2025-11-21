@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.madamecristina.dk/</loc>
+    <lastmod>2025-01-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.madamecristina.dk/"/>
+  </url>
+  
+  <!-- Services - Haircuts -->
+  <url>
+    <loc>https://www.madamecristina.dk/services/haircuts</loc>
+    <lastmod>2025-01-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.madamecristina.dk/services/haircuts"/>
+  </url>
+  
+  <!-- Services - Coloring -->
+  <url>
+    <loc>https://www.madamecristina.dk/services/coloring</loc>
+    <lastmod>2025-01-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.madamecristina.dk/services/coloring"/>
+  </url>
+  
+  <!-- Services - Treatments -->
+  <url>
+    <loc>https://www.madamecristina.dk/services/treatments</loc>
+    <lastmod>2025-01-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.madamecristina.dk/services/treatments"/>
+  </url>
+  
+  <!-- Prices -->
+  <url>
+    <loc>https://www.madamecristina.dk/prices</loc>
+    <lastmod>2025-01-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.madamecristina.dk/prices"/>
+  </url>
+  
+  <!-- Contact -->
+  <url>
+    <loc>https://www.madamecristina.dk/contact</loc>
+    <lastmod>2025-01-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.madamecristina.dk/contact"/>
+  </url>
+  
+</urlset>
