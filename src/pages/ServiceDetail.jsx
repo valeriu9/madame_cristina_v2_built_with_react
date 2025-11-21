@@ -108,7 +108,7 @@ const ServiceDetail = () => {
             <h2 className="text-3xl font-bold text-[#1e1919] mb-8 text-center">
               {t.gallery.colorTransformations}
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
                 "https://customer-assets.emergentagent.com/job_modern-stylist/artifacts/76wxdqhp_IMG_5496.JPEG",
                 "https://customer-assets.emergentagent.com/job_modern-stylist/artifacts/w4u6q9b3_IMG_8757.JPEG",
@@ -118,7 +118,7 @@ const ServiceDetail = () => {
               ].map((image, index) => (
                 <div 
                   key={index}
-                  className="relative aspect-square overflow-hidden rounded-lg group cursor-pointer"
+                  className="relative aspect-square overflow-hidden w-full h-auto object-cover rounded-md group cursor-pointer"
                 >
                   <img 
                     src={image}
@@ -138,7 +138,7 @@ const ServiceDetail = () => {
             <h2 className="text-3xl font-bold text-[#1e1919] mb-8 text-center">
               {t.gallery.haircutExamples}
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
                 "https://customer-assets.emergentagent.com/job_modern-stylist/artifacts/bqojo0l7_IMG_1291.JPEG",
                 "https://customer-assets.emergentagent.com/job_modern-stylist/artifacts/obt6jxm3_IMG_1598.JPEG",
@@ -148,7 +148,7 @@ const ServiceDetail = () => {
               ].map((image, index) => (
                 <div 
                   key={index}
-                  className="relative aspect-square overflow-hidden rounded-lg group cursor-pointer"
+                  className="relative aspect-square overflow-hidden w-full h-auto object-cover rounded-md group cursor-pointer"
                 >
                   <img 
                     src={image}

@@ -91,7 +91,7 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-            <div className="pt-2">
+            <div className="pt-2" onClick={() => setIsOpen(false)}>
               <LanguageSwitcher />
             </div>
             <Button
