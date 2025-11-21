@@ -1,5 +1,4 @@
-# GitHub Actions workflow: build with craco and deploy to GitHub Pages
-# This version uses peaceiris/actions-gh-pages to avoid gh-pages CLI credential issues.
+# url= (local change; replace if you keep this in repo)
 name: Build and deploy to GitHub Pages
 on:
   push:
@@ -31,9 +30,26 @@ jobs:
       - name: Build (craco)
         run: npm run build
 
+      - name: Remove remote gh-pages branch (if it exists)
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # configure auth so we can delete the branch
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}
+          # delete gh-pages branch on origin if it exists (ignore error if not)
+          if git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
+            echo "Remote gh-pages exists — deleting..."
+            git push origin --delete gh-pages
+          else
+            echo "Remote gh-pages branch does not exist; nothing to delete."
+          fi
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
-          # optional: publish_branch: gh-pages
+          publish_branch: gh-pages
+          # ensure custom domain file is present on the published branch
+          cname: 'www.madamecristina.dk'
